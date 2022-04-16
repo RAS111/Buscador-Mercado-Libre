@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador Mercado Libre</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script async src="./js/app.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <form class="search-form">
+                <input class="search-input" type="text" placeholder="Lavarropas..." name="search">
+                <button class="search-btn" >Buscar</button>
+            </form>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h3 class="results-title">Resultados: <span class="results-count"></span></h3>
+        <div class="results">
+        </div>
+        <template id="result-item-template">
+            <div class="result-items">
+                <img src="" alt="" class="result-item-img">
+                <div class="result-item-content">
+                    <h4 class="result-item-title"></h4>
+                    <p class="result-item-condition"></p>
+                    <p class="result-item-sell">
+                        Vendidos: <span class="result-item-sell-count"></span>
+                    </p>
+                </div>
+                <div class="result-item-price">
+                </div>
+            </div>
+        </template>
+    </div> 
+</body>
+</html>
